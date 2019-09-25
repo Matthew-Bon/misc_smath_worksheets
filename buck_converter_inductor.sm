@@ -28,9 +28,9 @@
     </dependencies>
   </settings>
   <regions type="content">
-    <region id="0" left="0" top="0" width="291" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="0" left="0" top="0" width="283" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <text lang="eng">
-        <p>Boost Converter Inductor Worksheet</p>
+        <p>Buck Converter Inductor Worksheet</p>
       </text>
     </region>
     <region id="1" left="0" top="54" width="70" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
@@ -100,7 +100,7 @@
         </input>
       </math>
     </region>
-    <region id="8" left="396" top="90" width="118" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="8" left="414" top="90" width="118" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vripple</e>
@@ -143,8 +143,6 @@
           <e type="operand">L</e>
           <e type="operand">Vin</e>
           <e type="operand">Vout</e>
-          <e type="operand">Vd</e>
-          <e type="operator" args="2">+</e>
           <e type="operand">Vin</e>
           <e type="operator" args="2">-</e>
           <e type="bracket">(</e>
@@ -179,9 +177,9 @@
           <e type="operand">L</e>
         </input>
         <result action="numeric">
-          <e type="operand">1.0604</e>
+          <e type="operand">6.2378</e>
           <e type="operand">10</e>
-          <e type="operand">5</e>
+          <e type="operand">6</e>
           <e type="operator" args="1">-</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
