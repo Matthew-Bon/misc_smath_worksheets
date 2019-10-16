@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>5469545b-7e86-41a2-a26b-9d3a90f79f18</id>
-      <revision>4</revision>
+      <revision>5</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -33,29 +33,35 @@
         <p>Boost Converter Inductor Worksheet</p>
       </text>
     </region>
-    <region id="1" left="0" top="54" width="70" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="1" left="0" top="54" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout</e>
           <e type="operand">5</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="2" left="117" top="54" width="126" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="2" left="117" top="54" width="138" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Ioutmax</e>
           <e type="operand">0.150</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="3" left="252" top="54" width="62" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="3" left="270" top="54" width="74" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vin</e>
           <e type="operand">4</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
@@ -69,7 +75,7 @@
         </input>
       </math>
     </region>
-    <region id="5" left="117" top="81" width="112" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="5" left="117" top="81" width="132" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Fsw</e>
@@ -78,15 +84,19 @@
           <e type="operand">6</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="6" left="0" top="90" width="70" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="6" left="0" top="90" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vd</e>
           <e type="operand">0.7</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
@@ -100,11 +110,13 @@
         </input>
       </math>
     </region>
-    <region id="8" left="396" top="90" width="118" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="8" left="396" top="90" width="130" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vripple</e>
           <e type="operand">0.01</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
@@ -163,17 +175,19 @@
         </input>
       </math>
     </region>
-    <region id="12" left="9" top="378" width="104" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="12" left="9" top="378" width="116" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">ILdc</e>
         </input>
         <result action="numeric">
           <e type="operand">0.25</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region id="13" left="9" top="423" width="142" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="13" left="9" top="414" width="154" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">L</e>
@@ -185,10 +199,12 @@
           <e type="operator" args="1">-</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">H</e>
+          <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region id="14" left="9" top="486" width="316" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="14" left="9" top="477" width="328" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Coutmin</e>
@@ -208,6 +224,8 @@
           <e type="operand">7</e>
           <e type="operator" args="1">-</e>
           <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">F</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
