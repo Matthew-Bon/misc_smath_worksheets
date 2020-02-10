@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7030.1435"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>a13eb12a-3bf2-431c-953e-2e89027970dc</id>
+      <revision>4</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="PictureRegion" version="1.10.7030.1435" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="0" top="0" width="159" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Filter Cheat Sheet</p>
+      </text>
+    </region>
+    <region id="1" left="0" top="36" width="144" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Low Pass Filter:</p>
+      </text>
+    </region>
+    <region id="2" left="0" top="63" width="453" height="252" color="#000000" bgColor="#ffffff">
+      <picture>
+        <raw format="png" encoding="base64">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</raw>
+      </picture>
+    </region>
+    <region id="3" left="18" top="324" width="86" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F.in</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" left="189" top="324" width="117" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C.low_pass</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">μF</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="324" top="324" width="170" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F.cutoff_low_pass</e>
+          <e type="operand">3</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="522" top="324" width="128" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.in_low_pass</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="18" top="369" width="357" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">X.c_low_pass</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">3.14</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F.in</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">C.low_pass</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">159.2357</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="8" left="18" top="423" width="420" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.low_pass</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">3.14</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F.cutoff_low_pass</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">C.low_pass</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">53.0786</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="9" left="0" top="477" width="479" height="64" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.out_low_pass</e>
+          <e type="operand">V.in_low_pass</e>
+          <e type="operand">X.c_low_pass</e>
+          <e type="operand">R.low_pass</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">X.c_low_pass</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.9487</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
