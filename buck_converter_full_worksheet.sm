@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>7a9d8e8b-5bc4-4f05-b254-4b4b36e45a9b</id>
-      <revision>2</revision>
+      <revision>6</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -24,6 +24,8 @@
     <dependencies>
       <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
       <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="PictureRegion" version="1.10.7030.1435" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="SpecialFunctions" version="1.12.7030.1435" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
       <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
     </dependencies>
   </settings>
@@ -37,48 +39,17 @@
       <math>
         <input>
           <e type="operand">Vout</e>
-          <e type="operand">4</e>
+          <e type="operand">5</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="2" left="117" top="54" width="138" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">Ioutmax</e>
-          <e type="operand">0.150</e>
-          <e type="operand" style="unit">A</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region id="3" left="279" top="54" width="74" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="2" left="117" top="54" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Vin</e>
-          <e type="operand">6</e>
-          <e type="operand" style="unit">V</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region id="4" left="378" top="54" width="70" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">η</e>
-          <e type="operand">0.75</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region id="5" left="486" top="54" width="106" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">Vinmax</e>
           <e type="operand">12</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
@@ -86,13 +57,55 @@
         </input>
       </math>
     </region>
-    <region id="6" left="117" top="81" width="132" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="3" left="216" top="54" width="70" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">η</e>
+          <e type="operand">0.90</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" left="297" top="54" width="106" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vinmax</e>
+          <e type="operand">13</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="405" top="54" width="128" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.appMax</e>
+          <e type="operand">0.500</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="558" top="54" width="128" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.appmin</e>
+          <e type="operand">0.010</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="117" top="81" width="132" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Fsw</e>
-          <e type="operand">1.5</e>
+          <e type="operand">100</e>
           <e type="operand">10</e>
-          <e type="operand">6</e>
+          <e type="operand">3</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
           <e type="operand" style="unit">Hz</e>
@@ -101,10 +114,10 @@
         </input>
       </math>
     </region>
-    <region id="7" left="0" top="90" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="8" left="0" top="90" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
-          <e type="operand">Vd</e>
+          <e type="operand">Vf</e>
           <e type="operand">0.7</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
@@ -112,27 +125,118 @@
         </input>
       </math>
     </region>
-    <region id="8" left="261" top="90" width="102" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="9" left="288" top="90" width="90" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
-          <e type="operand">Ripple</e>
-          <e type="operand">0.3</e>
+          <e type="operand">I.ICMax</e>
+          <e type="operand">2</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="9" left="414" top="90" width="130" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="10" left="396" top="90" width="86" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
-          <e type="operand">Vripple</e>
-          <e type="operand">0.01</e>
+          <e type="operand">I.fb</e>
+          <e type="operand">10</e>
+          <e type="operand" style="unit">mA</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="504" top="90" width="86" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.fb</e>
+          <e type="operand">0.8</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="10" left="9" top="135" width="234" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="12" left="612" top="90" width="122" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Delta_V</e>
+          <e type="operand">10</e>
+          <e type="operand" style="unit">mV</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="13" left="0" top="126" width="493" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>If L value is known, enter it here and set ripple_% to 0. 
+If not, set L = to 0 and set rippler_% to a nonzero value:  </p>
+      </text>
+    </region>
+    <region id="14" left="504" top="126" width="66" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L</e>
+          <e type="operand">0</e>
+          <e type="operand" style="unit">μH</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="15" left="504" top="153" width="110" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ripple_%</e>
+          <e type="operand">.3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="16" left="18" top="189" width="273" height="98" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">l</e>
+          <e type="function" args="1">f</e>
+          <e type="operand">l</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">&gt;</e>
+          <e type="operand">l</e>
+          <e type="operand">Vout</e>
+          <e type="operand">Vin</e>
+          <e type="operand">Vout</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ripple_%</e>
+          <e type="operand">I.appMax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Fsw</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Vin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="3">if</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="17" left="0" top="297" width="133" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L</e>
+          <e type="function" args="1">f</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0002</e>
+          <e type="operand" style="unit">H</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="18" left="0" top="333" width="226" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">Duty_cycle</e>
@@ -144,11 +248,11 @@
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.8889</e>
+          <e type="operand">0.463</e>
         </result>
       </math>
     </region>
-    <region id="11" left="342" top="135" width="246" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="19" left="333" top="333" width="246" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">maxduty</e>
@@ -161,92 +265,254 @@
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.4444</e>
+          <e type="operand">0.4274</e>
         </result>
       </math>
     </region>
-    <region id="12" left="9" top="189" width="178" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="20" left="0" top="387" width="331" height="94" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
-          <e type="operand">ILdc</e>
+          <e type="operand">l</e>
+          <e type="function" args="1">DeltaIL</e>
+          <e type="operand">l</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">&gt;</e>
+          <e type="operand">Vinmax</e>
           <e type="operand">Vout</e>
-          <e type="operand">Ioutmax</e>
-          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
           <e type="bracket">(</e>
-          <e type="operand">Vin</e>
-          <e type="operand">η</e>
+          <e type="operand">Duty_cycle</e>
           <e type="operator" args="2">*</e>
-          <e type="bracket">(</e>
+          <e type="operand">Fsw</e>
+          <e type="operand">L</e>
+          <e type="function" args="1">f</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region id="13" left="342" top="198" width="178" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">DeltaIl</e>
-          <e type="operand">ILdc</e>
-          <e type="operand">Ripple</e>
+          <e type="operand">ripple_%</e>
+          <e type="operand">1</e>
           <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="3">if</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region id="14" left="0" top="252" width="222" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="21" left="0" top="495" width="157" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
           <e type="operand">L</e>
-          <e type="operand">Vin</e>
-          <e type="operand">Vout</e>
-          <e type="operand">Vin</e>
-          <e type="operator" args="2">-</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="bracket">(</e>
-          <e type="operand">DeltaIl</e>
-          <e type="operand">Fsw</e>
-          <e type="operator" args="2">*</e>
-          <e type="operand">Vout</e>
-          <e type="operand">Vd</e>
-          <e type="operator" args="2">+</e>
-          <e type="bracket">(</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">/</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region id="15" left="342" top="261" width="132" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">ILdc</e>
+          <e type="function" args="1">DeltaIL</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.1333</e>
+          <e type="operand">0.3</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region id="16" left="270" top="324" width="344" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="22" left="0" top="540" width="272" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
-          <e type="operand">Coutmin</e>
-          <e type="operand">DeltaIl</e>
-          <e type="operand">8</e>
-          <e type="operand">Fsw</e>
+          <e type="operand">I.Max</e>
+          <e type="operand">I.ICMax</e>
+          <e type="operand">L</e>
+          <e type="function" args="1">DeltaIL</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.85</e>
+          <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
-          <e type="operand">Vripple</e>
+        </result>
+      </math>
+    </region>
+    <region id="23" left="297" top="585" width="455" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Max current the switch will see in operation
+(note this ignores inductive kick or other transients)</p>
+      </text>
+    </region>
+    <region id="24" left="0" top="594" width="293" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.swMax</e>
+          <e type="operand">L</e>
+          <e type="function" args="1">DeltaIL</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">I.appMax</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.65</e>
+          <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="25" left="0" top="657" width="160" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Diode Calculations</p>
+      </text>
+    </region>
+    <region id="26" left="9" top="693" width="306" height="31" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">If</e>
+          <e type="operand">I.appMax</e>
+          <e type="operand">1</e>
+          <e type="operand">Duty_cycle</e>
+          <e type="operator" args="2">-</e>
           <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2685</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="27" left="9" top="720" width="170" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pd</e>
+          <e type="operand">If</e>
+          <e type="operand">Vf</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.188</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="28" left="0" top="765" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Voltage Feedback Calculations</p>
+      </text>
+    </region>
+    <region id="29" left="9" top="792" width="159" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.r12</e>
+          <e type="operand">100</e>
+          <e type="operand">I.fb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="30" left="162" top="792" width="507" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Defaults to 100 times the feedback current, adjust as needed </p>
+      </text>
+    </region>
+    <region id="31" left="243" top="819" width="139" height="185" color="#000000" bgColor="#ffffff">
+      <picture>
+        <raw format="png" encoding="base64">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</raw>
+      </picture>
+    </region>
+    <region id="32" left="9" top="828" width="143" height="53" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R2</e>
+          <e type="operand">V.fb</e>
+          <e type="operand">I.r12</e>
           <e type="operator" args="2">/</e>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3.3333</e>
+          <e type="operand">0.8</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="33" left="405" top="846" width="270" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Image from TI app note SLVA477B </p>
+      </text>
+    </region>
+    <region id="34" left="9" top="882" width="208" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R1</e>
+          <e type="operand">R2</e>
+          <e type="operand">Vout</e>
+          <e type="operand">V.fb</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.2</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="35" left="0" top="1044" width="250" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Output Capacitor Calculations</p>
+      </text>
+    </region>
+    <region id="36" left="9" top="1080" width="122" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ESR</e>
+          <e type="operand">0.001</e>
+          <e type="operand" style="unit">ohm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="37" left="162" top="1080" width="78" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.os</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">mV</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="38" left="0" top="1116" width="292" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Cout</e>
+          <e type="operand">L</e>
+          <e type="function" args="1">DeltaIL</e>
+          <e type="operand">8</e>
+          <e type="operand">Fsw</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Delta_V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3.75</e>
           <e type="operand">10</e>
-          <e type="operand">7</e>
+          <e type="operand">5</e>
           <e type="operator" args="1">-</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
@@ -255,21 +521,48 @@
         </result>
       </math>
     </region>
-    <region id="17" left="9" top="333" width="166" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region id="39" left="0" top="1170" width="310" height="31" color="#000000" bgColor="#ffffff" fontSize="10">
       <math>
         <input>
+          <e type="operand">Delta_V.esr</e>
+          <e type="operand">ESR</e>
           <e type="operand">L</e>
+          <e type="function" args="1">DeltaIL</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">4.2553</e>
-          <e type="operand">10</e>
-          <e type="operand">5</e>
-          <e type="operator" args="1">-</e>
+          <e type="operand">0.0003</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="40" left="0" top="1206" width="348" height="64" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Cout.min</e>
+          <e type="operand">I.appMax</e>
+          <e type="operand">I.appmin</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
           <e type="operator" args="2">^</e>
+          <e type="operand">L</e>
+          <e type="function" args="1">f</e>
           <e type="operator" args="2">*</e>
-          <e type="operand" style="unit">H</e>
+          <e type="operand">2</e>
+          <e type="operand">Vout</e>
           <e type="operator" args="2">*</e>
-          <e type="operator" args="1">-</e>
+          <e type="operand">V.os</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0047</e>
+          <e type="operand" style="unit">F</e>
+          <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
